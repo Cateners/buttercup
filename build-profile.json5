@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\29513\\.ohos\\config\\default_Buttercup_0UgEGbfUlXPL-F-uGIWqRuQUAzr8Bwau2gVKAAJeTB4=.cer",
+          "storePassword": "0000001B727EF8659BD3B04D3150B0CF97574904C06F2303718E75B0310C83BE3B0A789879419D5435642B",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BA8A1C67A381DDDD97439A19BA284AA2C32196F664B965E00B74D06398ED2ED13A8E33E56A6EE90",
+          "profile": "C:\\Users\\29513\\.ohos\\config\\default_Buttercup_0UgEGbfUlXPL-F-uGIWqRuQUAzr8Bwau2gVKAAJeTB4=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\29513\\.ohos\\config\\default_Buttercup_0UgEGbfUlXPL-F-uGIWqRuQUAzr8Bwau2gVKAAJeTB4=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

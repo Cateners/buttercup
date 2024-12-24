@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ruffle.js"></script>
+</head>
+<body id="flash-container" style="width: 100vw; height: 100vh; margin: 0;">
+<script>
+    let ruffle = window.RufflePlayer.newest();
+    let container = document.getElementById("flash-container");
+    let player = ruffle.createPlayer();
+    player.style = "width: 100vw; height: 100vh; margin: 0";
+    player.ruffle().config = {
+        autoplay: "on",
+        unmuteOverlay: "hidden",
+        splashScreen: false,
+        allowFullscreen: true,
+        contextMenu: "off",
+        base: "../../FLASH_DIR",
+        backgroundColor: "#FFFFFF",
+        EXTRA_OPTIONS
+    }
+    container.appendChild(player);
+    player.load("../../FLASH_FILE");
+</script>
+</body>
+</html>

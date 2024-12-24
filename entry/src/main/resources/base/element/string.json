@@ -1,0 +1,204 @@
+{
+  "string": [
+    {
+      "name": "app_title",
+      "value": "Buttercup"
+    },
+    {
+      "name": "game_exit_hint",
+      "value": "确定要退出吗？"
+    },
+    {
+      "name": "dialog_confirm",
+      "value": "确定"
+    },
+    {
+      "name": "dialog_cancel",
+      "value": "返回"
+    },
+    {
+      "name": "move_in_start",
+      "value": "开始导入"
+    },
+    {
+      "name": "move_in_success",
+      "value": "成功导入"
+    },
+    {
+      "name": "move_in_fail",
+      "value": "导入失败"
+    },
+    {
+      "name": "delete_hint",
+      "value": "确定要删除该文件（夹）吗？"
+    },
+    {
+      "name": "delete_start",
+      "value": "开始删除"
+    },
+    {
+      "name": "delete_success",
+      "value": "成功删除"
+    },
+    {
+      "name": "delete_fail",
+      "value": "删除失败"
+    },
+    {
+      "name": "current_path_hint",
+      "value": "当前路径："
+    },
+    {
+      "name": "empty",
+      "value": "空空如也，导入一些文件吧"
+    },
+    {
+      "name": "refresh",
+      "value": "刷新"
+    },
+    {
+      "name": "refreshed",
+      "value": "已刷新"
+    },
+    {
+      "name": "folder_add",
+      "value": "新建文件夹"
+    },
+    {
+      "name": "folder_add_success",
+      "value": "成功新建"
+    },
+    {
+      "name": "folder_add_fail",
+      "value": "未成功新建"
+    },
+    {
+      "name": "file_import",
+      "value": "文件导入"
+    },
+    {
+      "name": "play",
+      "value": "开始游戏"
+    },
+    {
+      "name": "uncompress_hint",
+      "value": "是否解压该文件至同名文件夹？"
+    },
+    {
+      "name": "uncompress_password_hint",
+      "value": "输入压缩包密码"
+    },
+    {
+      "name": "uncompress_start",
+      "value": "开始解压"
+    },
+    {
+      "name": "uncompress_success",
+      "value": "成功解压"
+    },
+    {
+      "name": "uncompress_fail",
+      "value": "解压失败"
+    },
+    {
+      "name": "corrupted_file",
+      "value": "文件损坏"
+    },
+    {
+      "name": "start_server_fail",
+      "value": "服务器启动失败"
+    },
+    {
+      "name": "start_server_success",
+      "value": "服务器启动成功"
+    },
+    {
+      "name": "not_found",
+      "value": "未找到文件"
+    },
+    {
+      "name": "info",
+      "value": "软件信息"
+    },
+    {
+      "name": "unpack_asar_hint",
+      "value": "需要解压数据包。继续吗？"
+    },
+    {
+      "name": "unsupported_type",
+      "value": "暂不支持此文件"
+    },
+    {
+      "name": "touch_to_mouse",
+      "value": "用触控模拟鼠标"
+    },
+    {
+      "name": "zip_encoding",
+      "value": "zip内字符编码方案"
+    },
+    {
+      "name": "zip_encoding_default",
+      "value": "默认"
+    },
+    {
+      "name": "zip_encoding_en",
+      "value": "英"
+    },
+    {
+      "name": "zip_encoding_sc",
+      "value": "简中"
+    },
+    {
+      "name": "zip_encoding_tc",
+      "value": "繁中"
+    },
+    {
+      "name": "zip_encoding_jp",
+      "value": "日"
+    },
+    {
+      "name": "zip_encoding_error",
+      "value": "解压失败，可能是编码方式不支持"
+    },
+    {
+      "name": "setting",
+      "value": "设置"
+    },
+    {
+      "name": "scale_hint",
+      "value": "页面初始缩放"
+    },
+    {
+      "name": "user_agent_hint",
+      "value": "以电脑页面打开"
+    },
+    {
+      "name": "ruffle_runtime",
+      "value": "以AIR方式打开swf"
+    },
+    {
+      "name": "info_text",
+      "value": "Buttercup v0.0.1\n\n一款Web应用启动器实现。支持运行index.html以及其他常见打包后的Web应用格式。\n\n由于鸿蒙权限限制，本软件无法访问用户文件夹，所以需要将文件导入到软件并解压:)\n\n制作中用到了@pura/harmony-utils、@pura/harmony-dialog、@ohos/unrar、Ruffle等等项目，十分感谢。\n\n——Caten (*/w＼*)"
+    },
+    {
+      "name": "module_desc",
+      "value": "主模块，也是唯一的模块"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "一款Web应用启动器"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "Buttercup"
+    },
+    {
+      "name": "touch_to_mouse_patch",
+      "value": "function touchHandler(event){var touches=event.changedTouches,first=touches[0],type=\"\";switch(event.type){case\"touchstart\":type=\"mousedown\";break;case\"touchmove\":type=\"mousemove\";break;case\"touchend\":type=\"mouseup\";break;default:return}var simulatedEvent=document.createEvent(\"MouseEvent\");simulatedEvent.initMouseEvent(type,true,true,window,1,first.screenX,first.screenY,first.clientX,first.clientY,false,false,false,false,0,null);first.target.dispatchEvent(simulatedEvent);event.preventDefault()}document.addEventListener(\"touchstart\",touchHandler,true);document.addEventListener(\"touchmove\",touchHandler,true);document.addEventListener(\"touchend\",touchHandler,true);document.addEventListener(\"touchcancel\",touchHandler,true);"
+    },
+    {
+      "name": "tyrano_patch",
+      "value": "var TyranoPlayer=function(){var b=function(c){if(!(this instanceof b))return new b(c);this.storage_url=c},a=b.prototype;a.pauseAllAudio=function(){console.log(\"pause All Audio!\");console.log(TYRANO.kag.tmp.map_bgm);var c=TYRANO.kag.tmp.map_bgm,e=TYRANO.kag.tmp.map_se,d;for(d in c)c[d].pause();for(d in e)e[d].pause()};a.resumeAllAudio=function(){console.log(\"resume All Audio!\");var c=TYRANO.kag.tmp.map_bgm;\"\"!=TYRANO.kag.stat.current_bgm&&(c[TYRANO.kag.stat.current_bgm]?c[TYRANO.kag.stat.current_bgm].play():\nc[0]&&c[0].play())};return b}(),_tyrano_player=new TyranoPlayer(\"\");$.setStorage=function(b,a,c){\"webstorage_compress\"==c?$.setStorageCompress(b,a):$.setStorageWeb(b,a)};$.getStorage=function(b,a){return\"webstorage_compress\"==a?$.getStorageCompress(b):$.getStorageWeb(b)};$.setStorageWeb=function(b,a){a=JSON.stringify(a);try{localStorage.setItem(b,escape(a))}catch(c){console.error(\"\\u30bb\\u30fc\\u30d6\\u30c7\\u30fc\\u30bf\\u3002localstorage\\u304c\\u5229\\u7528\\u3067\\u304d\\u307e\\u305b\\u3093\\u3002\")}};\n$.getStorageWeb=function(b){try{var a=\"null\";localStorage.getItem(b)&&(a=unescape(localStorage.getItem(b)));if(\"null\"==a)return null}catch(c){return console.error(\"\\u30bb\\u30fc\\u30d6\\u30c7\\u30fc\\u30bf\\u3002localstorage\\u304c\\u5229\\u7528\\u3067\\u304d\\u307e\\u305b\\u3093\\u3002\"),null}return a};$.setStorageCompress=function(b,a){a=JSON.stringify(a);localStorage.setItem(b,LZString.compress(escape(a)))};\n$.getStorageCompress=function(b){try{var a=\"null\";localStorage.getItem(b)&&(a=unescape(LZString.decompress(localStorage.getItem(b))),\"null\"==a&&(a=unescape(localStorage.getItem(b))));if(\"null\"==a)return null}catch(c){console.log(\"==============\"),console.log(c),alert($.lang(\"save_does_not_work\")),$.confirmSaveClear()}return a};$.openWebFromApp=function(b){location.href=b};"
+    }
+  ]
+}
